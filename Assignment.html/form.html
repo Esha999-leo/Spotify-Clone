@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        <br>
+        <div>
+           <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <br>
+        <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option>Select an option</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="Iran">Iran</option>
+            </select>
+        </div>
+        <br>
+        <div>
+        <label for="message">Message:</label>
+        <textarea id="message" cols="20" rows="5" name="message"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="sub" name="sub">
+            <label for="sub">Subscribe?</label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <hr>
+
+    <h2>Feedback Form</h2>
+    <form action="/server">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Write your name" name="user_name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_email" placeholder="Write your Email">
+        </div>
+        <br>
+        <div>
+            <label for="Message">Message:</label>
+            <div>
+                <textarea cols="30" rows="5" id="message" value="message"></textarea>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label for="rates">Rates us out of 5:</label>
+            <div>
+                <input type="radio" id="rates" name="rates" value="1">
+                <label for="rates">1</label>
+            </div>
+            <div>
+                <input type="radio" id="rates" name="rates" value="2">
+                <label for="rates">2</label>
+            </div>
+            <div>
+                <input type="radio" id="rates" name="rates" value="3">
+                <label for="rates">3</label>
+            </div>
+            <div>
+                <input type="radio" id="rates" name="rates" value="4">
+                <label for="rates">4</label>
+            </div>
+            <div>
+                <input type="radio" id="rates" name="rates" value="5">
+                <label for="rates">5</label>
+            </div>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Send your messsage!</button>
+        </div>
+    </form>
+</body>
+</html>
